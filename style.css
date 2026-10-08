@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f7f2;
+    color: #183b20;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #176b35;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Área principal */
+main {
+    display: flex;
+    height: calc(100vh - 130px);
+}
+
+/* Painel lateral */
+.painel {
+    width: 320px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.painel h2 {
+    margin-bottom: 10px;
+}
+
+.painel p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Legenda */
+.legenda {
+    margin-bottom: 25px;
+}
+
+.legenda div {
+    margin: 12px 0;
+}
+
+.bolinha {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.vermelha {
+    background-color: red;
+}
+
+.amarela {
+    background-color: orange;
+}
+
+.verde {
+    background-color: green;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #176b35;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e4f25;
+}
+
+/* Mapa */
+#mapa {
+    flex: 1;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #123d20;
+    color: white;
+}

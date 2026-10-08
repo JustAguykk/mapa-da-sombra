@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mapa da Sombra</title>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌳 Mapa da Sombra</h1>
+        <p>Encontre lugares com pouca sombra na cidade</p>
+    </header>
+
+    <main>
+
+        <section class="painel">
+
+            <h2>Mapa Ambiental</h2>
+
+            <p>
+                Clique nos pontos do mapa para saber
+                como é a quantidade de sombra no local.
+            </p>
+
+            <div class="legenda">
+
+                <div>
+                    <span class="bolinha vermelha"></span>
+                    Pouca sombra
+                </div>
+
+                <div>
+                    <span class="bolinha amarela"></span>
+                    Sombra moderada
+                </div>
+
+                <div>
+                    <span class="bolinha verde"></span>
+                    Boa sombra
+                </div>
+
+            </div>
+
+            <button onclick="ativarAdicionar()">
+                ➕ Adicionar local
+            </button>
+
+        </section>
+
+        <section id="mapa"></section>
+
+    </main>
+
+    <footer>
+        <p>Mapa da Sombra © 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
